@@ -1,9 +1,29 @@
 #ifndef serpente
 #define serpente
 
-void mostrarCampo(int &x, char campo[][9]);
-void detectarTecla(char campo[][9], int &direcao, int &ultimaPosicaoX, char &ultimaTeclaX, char &ultimaTeclaY);
+struct Cobra{
+	int tamanho;
+	int velocidade;
+	int x=1;
+	int y=1;
+	char cobra = 'S';
+	char ultimaTeclaX='d';
+	char ultimaTeclaY='n';
+	int ultimaPosicaoX=x-1;
+	int ultimaPosicaoY=1;
+};
+
+const int ALTURA = 20;
+const int LARGURA = 30;
+
+struct Campo
+{
+    char mapa[ALTURA][LARGURA];
+};
+
+void mostrarCampo(struct Cobra *cobra, char campo[20][30], int altura, int largura);
+void detectarTecla(struct Cobra *cobra);
 void jogar();
-void mostrarSerpente(char campo[9][9], int &direcaoX, int &direcaoY, char &ultimaTeclaX, char &ultimaTeclaY);
+void mostrarSerpente(char campo[20][30], struct Cobra *cobra);
 
 #endif
