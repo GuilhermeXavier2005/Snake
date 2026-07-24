@@ -3,10 +3,9 @@
 #include <windows.h>
 using namespace std;
 
-void jogar(){
+void jogar(int dificuldadeTempo, int altura, int largura){
 	struct Cobra cobra;
 	//struct Campo campo;
-	int dificuldadeTempo = 250;
 	//const int ALTURA = 20;
 	//const int LARGURA = 30;
 	char campo[20][30] =
@@ -33,12 +32,12 @@ void jogar(){
 {'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*'}
 };
 	while(true){
-		if(cobra.x>=15||cobra.x<=-1||cobra.y<=-1||cobra.y>=15){
+		if(cobra.x>=largura||cobra.x<=-1||cobra.y<=-1||cobra.y>=altura){
 			break;
 		}else{
 			mostrarSerpente(campo, &cobra);
 			detectarTecla(&cobra);	
-			mostrarCampo(&cobra, campo, 15, 15);
+			mostrarCampo(&cobra, campo, altura, largura);
 			Sleep(dificuldadeTempo);
 		}
 	}

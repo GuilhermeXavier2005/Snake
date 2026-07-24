@@ -19,11 +19,14 @@ const int LARGURA = 30;
 struct Campo
 {
     char mapa[ALTURA][LARGURA];
+    char isca='x';
+    int ultimaPosicaoX;
+    int ultimaPosicaoY;
 };
 
 void mostrarCampo(struct Cobra *cobra, char campo[20][30], int altura, int largura);
 void detectarTecla(struct Cobra *cobra);
-void jogar();
+void jogar(int dificuldadeTempo, int altura, int largura);
 void mostrarSerpente(char campo[20][30], struct Cobra *cobra);
 
 #endif

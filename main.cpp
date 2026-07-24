@@ -21,8 +21,8 @@ int main()
         cout << "          S N A K E   G A M E\n";
         cout << "=====================================\n\n";
 
-        cout << " [1] Jogar\n";
-        cout << " [2] Testar teclado\n";
+        cout << " [1] Um jogador\n";
+        cout << " [2] Dois jogadores\n";
         cout << " [3] Creditos\n";
         cout << " [0] Sair\n\n";
 
@@ -33,27 +33,37 @@ int main()
         {
             case 1:
                 system("cls");
-                jogar();
-                break;
 
+		        cout << "=====================================\n";
+		        cout << "       selecione a dificuldade\n";
+		        cout << "=====================================\n\n";
+		
+		        cout << " [1] facil\n";
+		        cout << " [2] medio\n";
+		        cout << " [3] dificil\n";
+		
+		        cout << "Escolha uma opcao: ";
+		        cin >> opcao;
+		        switch(opcao){
+			        	case 1:
+						jogar(250, 15, 15);
+                	break;
+                	case 2:
+						jogar(150, 12, 12);
+	                	break;
+                	case 3:
+						jogar(50, 9, 9);
+	                	break;
+                	default:
+	                	cout << "\nOpcao invalida!\n";
+		                Sleep(1200);
+		                break;
+				}
+                break;
             case 2:
                 system("cls");
-                cout << "Pressione qualquer tecla.\n";
-                cout << "Pressione 'q' para voltar ao menu.\n\n";
-
-                while (true)
-                {
-                    if (_kbhit())
-                    {
-                        char tecla = _getch();
-
-                        cout << "Tecla pressionada: " << tecla << endl;
-
-                        if (tecla == 'q')
-                            break;
-                    }
-                }
-
+                cout<<"em desenvolvimento.."<<endl;
+                Sleep(1300);
                 break;
 
             case 3:
