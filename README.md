@@ -11,24 +11,6 @@ Projeto desenvolvido com o objetivo de estudar programação em C++, manipulaç�
 - Implementar movimentação em tempo real utilizando o teclado
 - Desenvolver lógica de colisão, crescimento da cobra e geração de comida
 
----
-
-## 🎮 Funcionalidades
-
-- [x] Menu inicial
-- [x] Movimentação da cobra
-- [x] Campo de jogo
-- [ ] Movimento vertical
-- [ ] Crescimento da cobra
-- [ ] Geração aleatória de comida
-- [ ] Sistema de pontuação
-- [ ] Colisão com paredes
-- [ ] Colisão com o próprio corpo
-- [ ] Reiniciar partida
-- [ ] Níveis de dificuldade
-
----
-
 ## 📁 Estrutura do projeto
 
 ```
