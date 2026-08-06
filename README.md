@@ -71,8 +71,8 @@ Snake/
 - [x] Movimentação da cobra
 - [x] Campo de jogo
 - [X] Movimento vertical
-- [ ] Crescimento da cobra
-- [ ] Geração aleatória de comida
+- [X] Crescimento da cobra
+- [X] Geração aleatória de comida
 - [ ] Sistema de pontuação
 - [X] Colisão com paredes
 - [ ] Colisão com o próprio corpo
