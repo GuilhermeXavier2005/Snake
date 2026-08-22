@@ -4,24 +4,20 @@
 
 using namespace std;
 
-void detectarTecla(struct Cobra *cobra){
+void detectarTecla(struct fila *f){
 	if(kbhit()){
 		char tecla = getch();
 		if(tecla == 'a'){
-			cobra->ultimaTeclaX = 'a';
-			cobra->ultimaTeclaY = 'n';
+			f->cabeca->sentido = ESQUERDA;
 		}
 		if(tecla == 'd'){
-			cobra->ultimaTeclaX = 'd';
-			cobra->ultimaTeclaY = 'n';
+			f->cabeca->sentido = DIREITA;
 		}
 		if(tecla == 's'){
-			cobra->ultimaTeclaY = 's';
-			cobra->ultimaTeclaX = 'n';
+			f->cabeca->sentido = BAIXO;
 		}
 		if(tecla == 'w'){
-			cobra->ultimaTeclaY = 'w';
-			cobra->ultimaTeclaX = 'n';
+			f->cabeca->sentido = CIMA;
 		}
 	}
 }

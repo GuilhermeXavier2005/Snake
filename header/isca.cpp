@@ -6,7 +6,7 @@
 using namespace std;
 
 void isca(char campo[20][30], struct Cobra *cobra, int largura, int altura, int *eiXo, int *eiYo){
-	if(cobra->tamanhoAnterior!=cobra->tamanho){
+/*	if(cobra->tamanhoAnterior!=cobra->tamanho){
 		srand(time(nullptr));
 		*eiXo = rand()%largura;
 		*eiYo = rand()%altura;
@@ -21,6 +21,6 @@ void isca(char campo[20][30], struct Cobra *cobra, int largura, int altura, int 
 //		cout<<cobra->tamanho<<endl;
 	}
 	cout<<cobra->tamanho<<endl;
-
+*/
 	return;
 }
