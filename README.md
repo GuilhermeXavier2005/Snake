@@ -9,7 +9,7 @@ Projeto desenvolvido com o objetivo de estudar programação em C++, manipulaç�
 - Utilizar structs para representar entidades do jogo
 - Trabalhar com passagem por referência e ponteiros
 - Implementar movimentação em tempo real utilizando o teclado
-- Desenvolver lógica de colisão, crescimento da cobra e geração de comida
+- Desenvolver lógica de colisão, crescimento da cobra e geração de comida usando fundamentos de estrutura de dados
 
 ## 📁 Estrutura do projeto
 
@@ -44,6 +44,8 @@ Snake/
 
 - Structs
 - Ponteiros
+- Filas encadeadas
+- Alocação de memória
 - Passagem por referência
 - Matrizes bidimensionais
 - Modularização
@@ -73,9 +75,9 @@ Snake/
 - [X] Movimento vertical
 - [X] Crescimento da cobra
 - [X] Geração aleatória de comida
-- [ ] Sistema de pontuação
+- [X] Sistema de pontuação
 - [X] Colisão com paredes
-- [ ] Colisão com o próprio corpo
+- [X] Dificuldade progressiva
 - [ ] Reiniciar partida
 - [X] Níveis de dificuldade
 - [ ] Multijogador
