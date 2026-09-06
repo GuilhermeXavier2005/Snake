@@ -73,12 +73,10 @@ Snake/
 - [X] Movimento vertical
 - [X] Crescimento da cobra
 - [X] Geração aleatória de comida
-- [ ] Sistema de pontuação
+- [X] Sistema de pontuação
 - [X] Colisão com paredes
-- [ ] Colisão com o próprio corpo
-- [ ] Reiniciar partida
+- [X] Dificuldade progressiva
 - [X] Níveis de dificuldade
-- [ ] Multijogador
 
 ---
 
