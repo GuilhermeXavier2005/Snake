@@ -10,6 +10,8 @@ void iniciarFila(struct fila *f){
 
 void enfileirar(struct fila *f){
 	struct Cobra* cobra = (Cobra*)malloc(sizeof(Cobra));
+	cobra->proximo = NULL;
+	cobra->anterior = NULL;
 	f->cabeca = cobra;
 	f->cauda = cobra;
 }
@@ -25,6 +27,7 @@ void jogar(int dificuldadeTempo, int altura, int largura){
 		}
 	}
 	enfileirar(&f);
+	int temporizador = dificuldadeTempo - f.velocidade;
 	while(true){
 		if(f.cabeca->x>=largura||f.cabeca->x<=-1||f.cabeca->y<=-1||f.cabeca->y>=altura){
 			break;
@@ -32,9 +35,11 @@ void jogar(int dificuldadeTempo, int altura, int largura){
 			mostrarSerpente(campo, &f);
 			detectarTecla(&f);
 			mostrarCampo(campo, altura, largura);
-			cout<<"X: "<<f.cabeca->x<<" Y: "<<f.cabeca->y<<endl;
-//			isca(campo, &cobra, largura, altura, &eiXo, &eiYo);
-			this_thread::sleep_for(chrono::milliseconds(dificuldadeTempo));
+			cout<<"velocidade: "<<temporizador + f.velocidade<<endl;
+//			if(f.cauda!=NULL){
+//				cout<<"Xcauda: "<<f.cauda->x<<" Ycauda: "<<f.cauda->y<<endl;}
+			isca(campo, &f, largura, altura, &eiXo, &eiYo);
+			this_thread::sleep_for(chrono::milliseconds(temporizador - f.velocidade));
 		}
 	}
 }
