@@ -67,6 +67,8 @@ int main(){
 			cout<<"=================Como jogar===================="<<endl;
 			cout<<"para movimentar-se use as teclas W,A,S e D para mudar a direção da serpente para cima, esquerda, baixo e direita"<<endl;
 			cout<<"diferentes dificuldades vão alterar a velocidade da serpente"<<endl;
+			cout<<"não há problemas em cruzar o corpo da serpente nela mesma"<<endl;
+			cout<<"durante o jogo a velocidade da serpente aumenta conforme se acumula pontos"<<endl;
 			this_thread::sleep_for(chrono::seconds(7));
 			break;
 		case 4:
